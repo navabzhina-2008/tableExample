@@ -12,6 +12,7 @@
         * {
             padding: 0;
             margin: 0;
+            background-color: #e8e8e8;
             box-sizing: border-box;
             font-family: Vazirmatn FD;
         }
@@ -38,12 +39,10 @@
 
         tbody>tr>td {
             padding: 10px;
+            color: black;
         }
-
-
-
-        tbody>tr:nth-child(even) {
-            background-color: rgb(199, 199, 199);
+        tbody>tr:nth-child(odd) {
+            background-color:white;
 
         }
 
@@ -60,38 +59,37 @@
             padding: 10px;
         }
 
-        .safhe {
-            background-color: orange;
-        }
-
+       .active{
+       background-color: orange;
+       }
+.noneactive{
+    background-color: white;
+}
         section#pagination {
             display: flex;
-            width: 50%;
+            width: 70%;
             margin: 15px auto;
-            gap: 20px;
+            gap: 10px;
         }
 
         section#pagination>div {
-            flex: 1;
+            flex: 1px;
         }
 
         section#pagination>div>a {
             display: block;
-            padding: 5px;
+            padding: 15px;
+            margin: 5px;
             text-decoration: none;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
+            text-align: center;
             color: #333;
-            border: 1px solid #e8e8e8;
-            transition: 0.2s;
-        }
+                }
 
         section#pagination>div>a:hover {
             background: orange;
 color: black;
-            border-color: orange;
         }
+        
     </style>
 </head>
 
@@ -184,15 +182,15 @@ color: black;
     <div> <a href=""><i class="fa-solid fa-angles-right"></i></a></div>
     <div> <a href=""><i class="fa-solid fa-angle-right"></i></a></div>
     <div> <a href="#" class="safhe">1</a> </div>
-    <div><a href="#" class="safhe">2</a> </div>
-    <div> <a href="#" class="safhe">3</a></div>
-    <div> <a href="#" class="safhe">4</a></div>
-    <div> <a href="#" class="safhe">5</a></div>
-    <div> <a href="#" class="safhe">6</a></div>
-    <div> <a href="#" class="safhe">7</a></div>
-    <div> <a href="#" class="safhe">8</a></div>
-    <div> <a href="#" class="safhe">9</a></div>
-    <div> <a href="#" class="safhe">10</a></div> 
+    <div> <a href="#" class="noneactive">3</a></div>
+    <div><a href="#"  class="noneactive">2</a> </div>
+    <div> <a href="#" class="noneactive">4</a></div>
+    <div> <a href="#" class="noneactive">5</a></div>
+    <div> <a href="#" class="noneactive">6</a></div>
+    <div> <a href="#" class="noneactive">7</a></div>
+    <div> <a href="#" class="noneactive">8</a></div>
+    <div> <a href="#" class="noneactive">9</a></div>
+    <div> <a href="#" class="noneactive">10</a></div> 
     <div> <a href=""> <i class="fa-solid fa-angle-left"></i></a></div>
     <div> <a href=""> <i class="fa-solid fa-angles-left"></i></a></div>
 
